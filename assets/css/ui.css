@@ -252,12 +252,56 @@ h1, h2, h3, h4, h5, h6 {
   height: 2px;
   left: 0;
   width: 100%; }
+  .scrollbar-inner > .scroll-element.scroll-x .scroll-bar {
+    cursor: pointer; }
+  .scrollbar-inner > .scroll-element.scroll-x:before {
+    content: '';
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0); }
+  .scrollbar-inner > .scroll-element.scroll-x:hover {
+    -webkit-transition: .3s ease;
+    -o-transition: .3s ease;
+    transition: .3s ease;
+    -webkit-transform: scaleY(10);
+        -ms-transform: scaleY(10);
+            transform: scaleY(10); }
+    .scrollbar-inner > .scroll-element.scroll-x:hover:before {
+      -webkit-transition: .35s ease;
+      -o-transition: .35s ease;
+      transition: .35s ease;
+      width: 0; }
 
 .scrollbar-inner > .scroll-element.scroll-y {
   height: 100%;
   right: 0;
   top: 0;
   width: 2px; }
+  .scrollbar-inner > .scroll-element.scroll-y .scroll-bar {
+    cursor: pointer; }
+  .scrollbar-inner > .scroll-element.scroll-y:before {
+    content: '';
+    width: 10px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: rgba(255, 255, 255, 0); }
+  .scrollbar-inner > .scroll-element.scroll-y:hover {
+    -webkit-transition: .3s ease;
+    -o-transition: .3s ease;
+    transition: .3s ease;
+    -webkit-transform: scaleX(10);
+        -ms-transform: scaleX(10);
+            transform: scaleX(10); }
+    .scrollbar-inner > .scroll-element.scroll-y:hover:before {
+      -webkit-transition: .35s ease;
+      -o-transition: .35s ease;
+      transition: .35s ease;
+      width: 0; }
 
 .scrollbar-inner > .scroll-element .scroll-element_outer {
   overflow: hidden; }
@@ -291,9 +335,6 @@ h1, h2, h3, h4, h5, h6 {
 body {
   font-family: PN, helvetica, arial sans-serif, sans-serif;
   color: #263238; }
-
-main {
-  padding-left: 80px; }
 
 .wrap {
   max-width: 96%;
@@ -1038,9 +1079,9 @@ main {
         -o-transition: .35s ease;
         transition: .35s ease; }
   .base-table tfoot tr {
-    background: rgba(178, 178, 178, 0.025); }
+    background: rgba(252, 146, 114, 0.05); }
     .base-table tfoot tr td {
-      border-top: solid 2px #151515;
+      border-top: solid 2px #FC9272;
       font-size: 14px;
       font-weight: 600; }
   .base-table td {
@@ -1464,7 +1505,8 @@ main {
   padding: 0;
   border: none;
   background: none;
-  cursor: pointer; }
+  cursor: pointer;
+  font-family: PN, helvetica, arial sans-serif, sans-serif; }
 
 .base-pagination {
   display: -webkit-box;

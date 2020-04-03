@@ -142,8 +142,6 @@
           .monitoring__page__situation__table .base-table tbody td .green,
           .monitoring__page__situation__table .base-table tfoot td .green {
             color: #29a524; }
-        .monitoring__page__situation__table .base-table tfoot tr {
-          background: rgba(178, 178, 178, 0.08); }
         .monitoring__page__situation__table .base-table tfoot td:nth-of-type(1) {
           font-weight: 900; }
           .monitoring__page__situation__table .base-table tfoot td:nth-of-type(1) .td-block:nth-of-type(1) .data {
@@ -163,9 +161,6 @@
       -webkit-align-items: center;
           -ms-flex-align: center;
               align-items: center; }
-      .monitoring__page__calls__header .section-title .select {
-        margin-left: 30px;
-        vertical-align: middle; }
       .monitoring__page__calls__header .page-count {
         margin-right: 0 !important; }
     .monitoring__page__calls__table {
@@ -189,8 +184,8 @@
           .monitoring__page__calls__table .base-table tbody td:nth-of-type(4) {
             color: #FC9272;
             text-decoration: underline; }
-        .monitoring__page__calls__table .base-table tbody tr:nth-child(even) td {
-          background: rgba(252, 146, 114, 0.04); }
+        .monitoring__page__calls__table .base-table tbody tr.no-answer td {
+          background: rgba(234, 16, 11, 0.075); }
         .monitoring__page__calls__table .base-table tbody .call-time .time,
         .monitoring__page__calls__table .base-table tbody .call-time .date {
           display: block; }
@@ -218,33 +213,25 @@
           .monitoring__page__calls__table .base-table tbody .call-type span {
             font-size: 13px;
             font-weight: 500; }
-        .monitoring__page__calls__table .base-table tbody .call-result {
-          color: #5E676B;
+        .monitoring__page__calls__table .base-table tbody .call-result .red {
+          color: #FF5B7F;
+          font-family: PN-semi, helvetica, arial sans-serif;
           font-size: 12px; }
-          .monitoring__page__calls__table .base-table tbody .call-result .red {
-            color: #FF5B7F;
-            font-family: PN-semi, helvetica, arial sans-serif; }
-            .monitoring__page__calls__table .base-table tbody .call-result .red:before {
-              content: '';
-              width: 5px;
-              height: 5px;
-              background: #FF5B7F;
-              border-radius: 50%;
-              display: inline-block;
-              vertical-align: middle;
-              margin-right: 5%; }
-          .monitoring__page__calls__table .base-table tbody .call-result .green {
-            color: #33AC2E;
-            font-family: PN-semi, helvetica, arial sans-serif; }
-            .monitoring__page__calls__table .base-table tbody .call-result .green:before {
-              content: '';
-              width: 5px;
-              height: 5px;
-              background: #33AC2E;
-              border-radius: 50%;
-              display: inline-block;
-              vertical-align: middle;
-              margin-right: 5%; }
+          .monitoring__page__calls__table .base-table tbody .call-result .red:before {
+            content: '';
+            width: 5px;
+            height: 5px;
+            background: #FF5B7F;
+            border-radius: 50%;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 5%; }
+        .monitoring__page__calls__table .base-table tbody .call-result .orange {
+          color: #f3933d;
+          font-size: 13px; }
+        .monitoring__page__calls__table .base-table tbody .call-result .green {
+          color: #29a524;
+          font-size: 13px; }
         .monitoring__page__calls__table .base-table .action {
           display: -webkit-box;
           display: -webkit-flex;

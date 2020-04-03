@@ -1,5 +1,7 @@
 .tariffs__page {
   padding-top: 120px; }
+  .tariffs__page > .wrap {
+    max-width: 1200px; }
   .tariffs__page--section {
     margin-bottom: 70px; }
     .tariffs__page--section.tariffs-list .service-item__ico {
@@ -18,30 +20,18 @@
           -ms-flex-wrap: wrap;
               flex-wrap: wrap; }
       .tariffs__page--section.configurations .service-item .service-item__action {
-        width: 100%;
-        -webkit-box-align: start;
-        -webkit-align-items: flex-start;
-            -ms-flex-align: start;
-                align-items: flex-start;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: row;
-            -ms-flex-direction: row;
-                flex-direction: row;
-        -webkit-flex-wrap: wrap;
-            -ms-flex-wrap: wrap;
-                flex-wrap: wrap; }
+        -webkit-box-align: end;
+        -webkit-align-items: flex-end;
+            -ms-flex-align: end;
+                align-items: flex-end; }
         .tariffs__page--section.configurations .service-item .service-item__action .btn:nth-child(1) {
           border-top-left-radius: 50px;
           border-bottom-left-radius: 50px;
-          margin-right: 10%;
           color: #33AC2E;
           background: #EAF7E9; }
           .tariffs__page--section.configurations .service-item .service-item__action .btn:nth-child(1):hover {
             background: #33AC2E;
             color: #fff; }
-        .tariffs__page--section.configurations .service-item .service-item__action .btn:nth-child(2) {
-          margin-right: 30px; }
     .tariffs__page--section.partner-services .services-container {
       display: -webkit-box;
       display: -webkit-flex;
@@ -656,7 +646,17 @@
             .tariffs__page .service-item .service-item__content .service-item__content--connected-numbers .row .cell b {
               display: block; }
       .tariffs__page .service-item .service-item__content .service-item__content--info {
-        display: none; } }
+        display: none; }
+  .tariffs__page .section-title {
+    text-align: center; }
+  .tariffs__page--section.configurations .service-item .service-item__action {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .tariffs__page--section.partner-services .services-container {
+    max-width: 96%;
+    margin: auto; } }
 
 @media (max-width: 420px) {
   .select-number_popup .base-popup__container {
