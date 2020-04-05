@@ -573,6 +573,10 @@
     .connect-external_popup .box .row.port .input-block:nth-of-type(2) {
       width: 80px; }
 
+@media (max-width: 1200px) {
+  .tariffs__page > .wrap {
+    max-width: 96%; } }
+
 @media (max-width: 700px) {
   .select-number_popup .base-tab__header .scrollbar-inner {
     overflow: scroll hidden !important; } }

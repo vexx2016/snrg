@@ -4,7 +4,8 @@
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    max-width: 100%; }
   .callSchema__page .input-adding {
     display: -webkit-box;
     display: -webkit-flex;
@@ -24,6 +25,7 @@
       margin-right: 5px; }
   .callSchema__page--sidebar {
     width: 340px;
+    margin-left: 2%;
     border-right: solid 1px #eee;
     -webkit-flex-shrink: 0;
         -ms-flex-negative: 0;
