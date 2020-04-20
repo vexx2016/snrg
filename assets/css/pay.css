@@ -18,9 +18,10 @@
     margin-bottom: 10px !important; }
     .pay__page .base-tab__btn.active {
       font-weight: 500 !important;
-      background: #ffd802; }
+      color: #fff;
+      background: #FC9272; }
       .pay__page .base-tab__btn.active:hover {
-        background: #ffc202; }
+        background: rgba(252, 146, 114, 0.75); }
     .pay__page .base-tab__btn:hover {
       background: #efefef; }
     .pay__page .base-tab__btn:before {
@@ -84,7 +85,7 @@
     margin-top: 28px;
     margin-bottom: 20px; }
     .pay__page__bills .table-controls .date {
-      font-weight: 600;
+      font-family: PN-semi, helvetica, arial sans-serif;
       font-size: 14px;
       margin: 0 15px; }
     .pay__page__bills .table-controls .btn {
@@ -92,10 +93,12 @@
       height: 20px;
       padding: 0;
       border-radius: 50%;
-      background: #84b4df;
+      background: #efefef;
       position: relative; }
       .pay__page__bills .table-controls .btn:hover {
-        background: #4d91ce; }
+        background: #FC9272; }
+        .pay__page__bills .table-controls .btn:hover svg {
+          fill: #fff; }
       .pay__page__bills .table-controls .btn.next-btn svg {
         -webkit-transform: translate(-50%, -50%) rotate(-90deg);
             -ms-transform: translate(-50%, -50%) rotate(-90deg);
@@ -107,7 +110,7 @@
       .pay__page__bills .table-controls .btn svg {
         width: 10px;
         height: 6px;
-        fill: #fff;
+        fill: #969696;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -128,36 +131,31 @@
     .pay__page__bills__table .base-table .action-cell .ico {
       width: 25px;
       margin-right: 15px; }
-      .pay__page__bills__table .base-table .action-cell .ico.yellow svg {
-        fill: #ed9f01; }
-      .pay__page__bills__table .base-table .action-cell .ico.blue svg {
-        fill: #84b4df; }
+      .pay__page__bills__table .base-table .action-cell .ico svg {
+        fill: #000; }
       .pay__page__bills__table .base-table .action-cell .ico svg {
         width: 25px; }
-  .pay__page__bills__table .base-table td {
-    font-weight: 400;
+  .pay__page__bills__table .base-table td .base-link {
+    font-size: 13px; }
+    .pay__page__bills__table .base-table td .base-link.blue {
+      color: #808080; }
+      .pay__page__bills__table .base-table td .base-link.blue:hover {
+        border-color: #808080; }
+    .pay__page__bills__table .base-table td .base-link.green {
+      color: #33AC2E; }
+      .pay__page__bills__table .base-table td .base-link.green:hover {
+        border-color: #33AC2E; }
+    .pay__page__bills__table .base-table td .base-link.red {
+      color: #FF5B7F; }
+      .pay__page__bills__table .base-table td .base-link.red:hover {
+        border-color: #FF5B7F; }
+  .pay__page__bills__table .base-table td .summ-cell {
+    font-weight: 700;
     font-size: 14px; }
-    .pay__page__bills__table .base-table td .base-link {
-      font-size: 13px; }
-      .pay__page__bills__table .base-table td .base-link.blue {
-        color: #84b4df; }
-        .pay__page__bills__table .base-table td .base-link.blue:hover {
-          border-color: #84b4df; }
-      .pay__page__bills__table .base-table td .base-link.green {
-        color: #139a13; }
-        .pay__page__bills__table .base-table td .base-link.green:hover {
-          border-color: #139a13; }
-      .pay__page__bills__table .base-table td .base-link.red {
-        color: #ff0101; }
-        .pay__page__bills__table .base-table td .base-link.red:hover {
-          border-color: #ff0101; }
-    .pay__page__bills__table .base-table td .summ-cell {
-      font-weight: 700;
-      font-size: 14px; }
-      .pay__page__bills__table .base-table td .summ-cell.red {
-        color: #ff0101; }
-      .pay__page__bills__table .base-table td .summ-cell.green {
-        color: #139a13; }
+    .pay__page__bills__table .base-table td .summ-cell.red {
+      color: #FF5B7F; }
+    .pay__page__bills__table .base-table td .summ-cell.green {
+      color: #33AC2E; }
   .pay__page__bills__table.--mobile {
     display: none; }
     .pay__page__bills__table.--mobile .action-cell .ico {
@@ -204,11 +202,11 @@
       display: flex;
       margin-bottom: 24px; }
     .pay__page__bills__summary .label {
-      font-weight: 700;
+      font-family: PN-semi, helvetica, arial sans-serif;
       margin-right: 10px;
       color: #313131; }
     .pay__page__bills__summary .data {
-      font-weight: 700;
+      font-family: PN-xtrbold, helvetica, arial sans-serif;
       color: #313131; }
 
 .base-popup.autopay__popup .btn.base-btn.popup-btn__close {
@@ -244,9 +242,6 @@
     .base-popup.autopay__popup .base-popup__container form .autopay-on_off .base-radio {
       display: inline-block;
       margin-right: 20px; }
-    .base-popup.autopay__popup .base-popup__container form .autopay-on_off .base-radio input[type="radio"]:checked + label .check {
-      background: #ffd804;
-      border-color: #ffd804; }
   .base-popup.autopay__popup .base-popup__container form p.info {
     margin-bottom: 15px;
     line-height: 1.25;
@@ -272,7 +267,7 @@
   font-size: 13px;
   color: #808080; }
   .base-popup.autopay__popup .base-popup__container .btn-row .info .attention {
-    color: #ff0101; }
+    color: #FF5B7F; }
 
 .base-popup.autopay__popup .base-popup__container .connect-paycard {
   margin-top: 30px;
@@ -280,10 +275,10 @@
   border-radius: 3px;
   border: solid 1px #eee; }
   .base-popup.autopay__popup .base-popup__container .connect-paycard .btn.base-btn {
-    background: #22af12;
+    background: #33AC2E;
     color: #fff; }
     .base-popup.autopay__popup .base-popup__container .connect-paycard .btn.base-btn:hover {
-      background: #1d980f; }
+      background: #64c760; }
   .base-popup.autopay__popup .base-popup__container .connect-paycard .info {
     margin-top: 6px;
     font-size: 12px;

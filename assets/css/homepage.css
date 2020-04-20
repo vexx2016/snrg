@@ -34,9 +34,8 @@
       text-align: center;
       margin-bottom: 40px; }
       .home-page .card .logo svg {
-        width: 78px; }
-        .home-page .card .logo svg .st111 {
-          fill: #000; }
+        width: 100px;
+        height: 27px; }
     .home-page .card .title {
       font-size: 28px;
       font-weight: 700;
@@ -45,13 +44,6 @@
       margin-bottom: 60px; }
     .home-page .card .row {
       text-align: center; }
-      .home-page .card .row .btn {
-        display: inline-block;
-        background: transparent;
-        border: solid 2px #ffd802; }
-        .home-page .card .row .btn:hover {
-          border-color: #ffc202;
-          background: #ffc202; }
   .home-page.login .card .title {
     margin-bottom: 30px; }
   .home-page.login .card .form .login-btn {
