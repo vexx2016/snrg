@@ -144,13 +144,16 @@
       border-top: solid 1px #eee;
       text-align: right; }
       .settings__page.__main .base-tab__body .btns-row .save-btn {
-        padding: 15px 45px;
+        padding: 14px 45px;
         min-width: 200px;
-        margin-bottom: 10px; }
+        margin-bottom: 10px;
+        vertical-align: middle; }
       .settings__page.__main .base-tab__body .btns-row .delete-info-btn {
         margin-bottom: 10px;
-        background-color: #f1f1f1;
-        padding: 15px; }
+        color: #263238;
+        background: #f1f1f1;
+        padding: 15px;
+        vertical-align: middle; }
         .settings__page.__main .base-tab__body .btns-row .delete-info-btn:hover {
           background: #c7c7c7; }
   .settings__page.__internal-numbers .__internal-numbers__header {
@@ -169,29 +172,34 @@
       margin-bottom: 20px;
       margin-right: 20px; }
     .settings__page.__internal-numbers .__internal-numbers__header .search-input {
-      margin-right: 8%; }
+      margin-right: 2%; }
       .settings__page.__internal-numbers .__internal-numbers__header .search-input input {
-        font-family: Montserrat;
+        font-family: PN, helvetica, arial sans-serif;
         font-size: 14px;
-        padding: 7px 10px 7px 30px; }
+        padding: 7px 30px 7px 10px; }
       .settings__page.__internal-numbers .__internal-numbers__header .search-input svg {
         width: 16px;
         height: 16px;
-        fill: #d4d4d4;
+        fill: #263238;
         position: absolute;
         top: 8px;
-        left: 8px; }
+        right: 10px;
+        -webkit-transform: rotateY(-180deg);
+                transform: rotateY(-180deg); }
     .settings__page.__internal-numbers .__internal-numbers__header .why-internal-btn {
-      margin-top: 8px;
-      font-family: Montserrat;
+      margin-top: 6px;
+      font-family: PN, helvetica, arial sans-serif;
       font-size: 13px;
       font-weight: 600;
-      border-bottom: solid 2px #ffd802;
       -webkit-transition: .3s ease;
       -o-transition: .3s ease;
       transition: .3s ease; }
-      .settings__page.__internal-numbers .__internal-numbers__header .why-internal-btn:hover {
-        color: #545454; }
+      .settings__page.__internal-numbers .__internal-numbers__header .why-internal-btn svg path {
+        -webkit-transition: .3s ease;
+        -o-transition: .3s ease;
+        transition: .3s ease; }
+      .settings__page.__internal-numbers .__internal-numbers__header .why-internal-btn:hover svg path {
+        opacity: 1 !important; }
   .settings__page.__internal-numbers .__internal-numbers__body {
     margin-top: 20px;
     margin-bottom: 80px; }
@@ -201,8 +209,8 @@
       font-weight: 600;
       border-radius: 0; }
       .settings__page.__internal-numbers .__internal-numbers__body .base-pagination .btn.active {
-        color: #313131;
-        background: #ffd802; }
+        color: #fff;
+        background: #FC9272; }
       .settings__page.__internal-numbers .__internal-numbers__body .base-pagination .btn:first-child {
         border-bottom-left-radius: 3px;
         border-top-left-radius: 3px; }
@@ -215,15 +223,35 @@
       font-weight: 500;
       font-size: 13px; }
       .settings__page.__internal-numbers .__internal-numbers__body .internal-numbers__table td span.status.red {
-        color: red; }
+        color: #FF5B7F;
+        font-family: PN-semi, helvetica, arial sans-serif;
+        font-size: 12px; }
+        .settings__page.__internal-numbers .__internal-numbers__body .internal-numbers__table td span.status.red:before {
+          content: '';
+          width: 5px;
+          height: 5px;
+          background: #FF5B7F;
+          border-radius: 50%;
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 5%; }
       .settings__page.__internal-numbers .__internal-numbers__body .internal-numbers__table td span.status.orange {
-        color: orange; }
+        color: #f3933d;
+        font-size: 13px; }
       .settings__page.__internal-numbers .__internal-numbers__body .internal-numbers__table td span.status.green {
-        color: green; }
-    .settings__page.__internal-numbers .__internal-numbers__body .internal-numbers__table .action .btn svg {
-      width: 26px;
-      height: 26px;
-      fill: #69b7e8; }
+        color: #29a524;
+        font-size: 13px; }
+    .settings__page.__internal-numbers .__internal-numbers__body .internal-numbers__table .action .btn {
+      margin: 0 5px;
+      -webkit-transition: .3s ease;
+      -o-transition: .3s ease;
+      transition: .3s ease; }
+      .settings__page.__internal-numbers .__internal-numbers__body .internal-numbers__table .action .btn svg {
+        width: 16px;
+        height: 16px;
+        fill: #FC9272; }
+      .settings__page.__internal-numbers .__internal-numbers__body .internal-numbers__table .action .btn:hover {
+        opacity: .55; }
     .settings__page.__internal-numbers .__internal-numbers__body .--mobile {
       display: none; }
       .settings__page.__internal-numbers .__internal-numbers__body .--mobile .maximize-row-btn {
@@ -329,9 +357,9 @@
         font-size: 12px;
         padding: 8px 15px; }
       .why-internal_popup--content .row .ico svg {
-        fill: #69b7e8;
-        height: 30px;
-        width: 30px; }
+        fill: #FC9272;
+        height: 16px;
+        width: 16px; }
     .why-internal_popup--content .row .info {
       color: #797979;
       font-weight: 500; }
@@ -347,7 +375,7 @@
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; }
     .edit-contact_popup .base-popup__container form p.info {
-      color: #f18a17;
+      color: #FC9272;
       font-size: 12px;
       font-weight: 500;
       margin-bottom: 10px;
@@ -646,11 +674,11 @@
 
 .settings-delete_popup .btn.base-btn.save-btn,
 .callWidgets-delete_popup .btn.base-btn.save-btn {
-  background: #f90d0d;
+  background: #FF5B7F;
   color: #fff; }
   .settings-delete_popup .btn.base-btn.save-btn:hover,
   .callWidgets-delete_popup .btn.base-btn.save-btn:hover {
-    background: #da0f0f; }
+    background: #ef2e58; }
 
 .emailNotifications-delete_popup .base-popup__container {
   max-width: 400px; }
