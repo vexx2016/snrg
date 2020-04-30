@@ -748,14 +748,14 @@
   .huntGroups-numbers_popup .base-popup__container .base-table {
     margin-bottom: 20px;
     border-bottom: solid 1px #eee; }
-  .huntGroups-numbers_popup .base-popup__container .btn:not(.remove-btn) svg {
-    fill: #a7d2ec; }
-  .huntGroups-numbers_popup .base-popup__container .btn svg {
-    width: 26px;
-    height: 26px;
-    fill: #69b7e8; }
-  .huntGroups-numbers_popup .base-popup__container .btn.remove-btn {
-    margin-left: 10px; }
+  .huntGroups-numbers_popup .base-popup__container .btn {
+    margin-right: 10px; }
+    .huntGroups-numbers_popup .base-popup__container .btn svg {
+      width: 18px;
+      height: 18px;
+      fill: #FC9272; }
+    .huntGroups-numbers_popup .base-popup__container .btn.remove-btn {
+      margin-left: 30px; }
   .huntGroups-numbers_popup .base-popup__container form {
     border-radius: 4px;
     background: #f7f7f7;
