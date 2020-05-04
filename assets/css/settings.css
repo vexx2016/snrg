@@ -17,12 +17,12 @@
       width: 12px;
       fill: #ccc; }
     .settings__page .base-tab__body.storageFiles .play-btn:hover svg {
-      fill: #ffd802; }
+      fill: #FC9272; }
   .settings__page .base-tab__body.storageFiles .download-btn svg {
     height: 17px;
     fill: #ccc; }
   .settings__page .base-tab__body.storageFiles .download-btn:hover svg {
-    fill: #ffd802; }
+    fill: #FC9272; }
   .settings__page.__main .base-tab__body {
     margin-bottom: 60px; }
     .settings__page.__main .base-tab__body form {
@@ -313,9 +313,9 @@
   .settings__page .emailNotifications-ico svg {
     width: 16px;
     height: 16px;
-    fill: #f18a17 !important; }
+    fill: #FC9272 !important; }
     .settings__page .emailNotifications-ico svg * {
-      fill: #f18a17 !important; }
+      fill: #FC9272 !important; }
   .settings__page.__integrations-page .api-table.--mobile {
     background: #f3f3f3; }
   .settings__page.__integrations-page .api-table .btn.base-btn.download-api-file {
@@ -509,7 +509,9 @@
     display: -ms-flexbox;
     display: flex; }
     .numlist-create_popup .list .input-block .btn {
-      margin-left: 10px; }
+      margin-left: 10px;
+      font-weight: 900;
+      font-size: 20px; }
   .numlist-create_popup .list-item {
     padding: 10px;
     font-size: 18px;
@@ -840,10 +842,12 @@
     border-bottom: solid 1px #eee; }
   .queue-members_popup .base-popup__container .internal-numbers__table {
     margin-bottom: 10px; }
-  .queue-members_popup .base-popup__container .btn svg {
-    width: 26px;
-    height: 26px;
-    fill: #69b7e8; }
+  .queue-members_popup .base-popup__container .btn {
+    margin-left: 8px; }
+    .queue-members_popup .base-popup__container .btn svg {
+      width: 16px;
+      height: 16px;
+      fill: #69b7e8; }
   .queue-members_popup .base-popup__container form {
     border-radius: 4px;
     background: #fbfbfb;
@@ -879,8 +883,10 @@
     margin-bottom: 20px;
     color: #909090; }
   .queue-members_popup .queue-members_popup--add-form .queue-members_popup--add-form-hide {
-    background: #f1f1f1; }
+    background: #f1f1f1;
+    color: #263238; }
     .queue-members_popup .queue-members_popup--add-form .queue-members_popup--add-form-hide:hover {
+      color: #263238;
       background: #c7c7c7; }
   .queue-members_popup .queue-members_popup--add-form .select-block {
     margin-bottom: 20px !important;
