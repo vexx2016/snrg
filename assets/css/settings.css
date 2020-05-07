@@ -319,13 +319,15 @@
   .settings__page.__integrations-page .api-table.--mobile {
     background: #f3f3f3; }
   .settings__page.__integrations-page .api-table .btn.base-btn.download-api-file {
-    background: #69b7e8;
+    background: rgba(252, 146, 114, 0.12);
     border-radius: 30px;
     padding: 8px 15px;
-    font-family: Montserrat;
-    font-style: 14px;
+    font-family: PN, helvetica, arial sans-serif;
+    font-size: 12px;
     font-weight: 500;
-    color: #fff; }
+    color: #FC9272; }
+    .settings__page.__integrations-page .api-table .btn.base-btn.download-api-file:hover {
+      background: rgba(252, 146, 114, 0.22); }
 
 .why-internal_popup--content {
   font-size: 14px;
@@ -461,7 +463,9 @@
     display: -ms-flexbox;
     display: flex; }
     .autocalling-edit_popup .adding .input-block .btn {
-      margin-left: 10px; }
+      margin-left: 10px;
+      font-weight: 900;
+      font-size: 20px; }
 
 .autocalling-edit_popup .list {
   width: 100%; }
@@ -543,7 +547,7 @@
     .calltracking-create_popup .base-popup__container form .col-1 .select-block .base-checkbox {
       margin-top: 5px; }
   .calltracking-create_popup .base-popup__container form .caution-info {
-    color: #ffc202; }
+    color: #FC9272; }
   .calltracking-create_popup .base-popup__container form .internal-nums {
     margin-bottom: 20px; }
     .calltracking-create_popup .base-popup__container form .internal-nums .select-block {
@@ -559,6 +563,9 @@
         margin-right: 10px; }
       .calltracking-create_popup .base-popup__container form .internal-nums .select-block label {
         width: 100%; }
+      .calltracking-create_popup .base-popup__container form .internal-nums .select-block .btn {
+        font-weight: 900;
+        font-size: 18px; }
     .calltracking-create_popup .base-popup__container form .internal-nums .list {
       margin-top: 10px;
       padding: 5px;
@@ -583,7 +590,7 @@
           .calltracking-create_popup .base-popup__container form .internal-nums .list-item .btn svg {
             width: 12px;
             height: 12px;
-            fill: #ff0101; }
+            fill: #FF5B7F; }
   .calltracking-create_popup .base-popup__container form .col-2 {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
@@ -624,7 +631,7 @@
               -ms-flex-negative: 0;
                   flex-shrink: 0; }
           .calltracking-create_popup .base-popup__container form .col-2 .pins .row .btn svg {
-            fill: #ff0101; }
+            fill: #FF5B7F; }
 
 .callWidgets-create_popup .base-popup__container {
   max-width: 400px; }
@@ -637,8 +644,6 @@
   display: flex; }
   .callWidgets-create_popup .radios-row .base-radio {
     margin-right: 30px; }
-    .callWidgets-create_popup .radios-row .base-radio input[type="radio"]:checked + label .check {
-      border-color: #ffd803; }
 
 .callWidgets-get_popup form {
   -webkit-flex-wrap: wrap;
@@ -657,8 +662,6 @@
   display: flex; }
   .callWidgets-get_popup .radios-row .base-radio {
     margin-right: 30px; }
-    .callWidgets-get_popup .radios-row .base-radio input[type="radio"]:checked + label .check {
-      border-color: #ffd803; }
 
 .settings-delete_popup .base-popup__container,
 .callWidgets-delete_popup .base-popup__container {
@@ -920,7 +923,7 @@
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    background: #f1f1f1;
+    background: rgba(252, 146, 114, 0.12);
     border-radius: 4px;
     -webkit-box-align: stretch;
     -webkit-align-items: stretch;
@@ -934,13 +937,13 @@
     display: -ms-flexbox;
     display: flex; }
     .create-integration_popup .integration-type .base-radio input[type="radio"]:checked + label {
-      background: #ffb460;
-      background: #f18a16;
+      background: #FC9272;
       color: #fff; }
       .create-integration_popup .integration-type .base-radio input[type="radio"]:checked + label .check {
         background: #fff; }
       .create-integration_popup .integration-type .base-radio input[type="radio"]:checked + label span {
-        color: #fff; }
+        color: #fff;
+        font-family: PN-semi, helvetica, arial sans-serif; }
     .create-integration_popup .integration-type .base-radio label {
       padding: 10px 20px;
       border-radius: 3px;
@@ -948,7 +951,9 @@
       padding-right: 8%;
       display: inline-block; }
       .create-integration_popup .integration-type .base-radio label span {
-        padding-left: 10px; }
+        padding-left: 10px;
+        font-family: PN, helvetica, arial sans-serif;
+        color: #FC9272; }
       .create-integration_popup .integration-type .base-radio label .check {
         top: 14px;
         left: 10px; }
