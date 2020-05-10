@@ -1166,7 +1166,7 @@ body {
     background: #fff;
     font-size: 15px;
     padding: 10px 10px;
-    font-family: inherit;
+    font-family: PN, helvetica, arial sans-serif;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     -webkit-transition: .3s ease;
@@ -1592,7 +1592,7 @@ body {
       margin-right: 10px; }
       .base-pagination .page-btns .num.active {
         background: #FC9272;
-        color: #151515 !important; }
+        color: #fff !important; }
     .base-pagination .page-btns .first {
       border-bottom-right-radius: 0;
       border-top-right-radius: 0;
@@ -1920,7 +1920,7 @@ body {
       position: relative;
       border: none;
       font-size: 14px;
-      font-family: inherit;
+      font-family: PN, helvetica, arial sans-serif;
       padding: 0;
       background: none;
       width: 100%;
