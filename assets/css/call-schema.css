@@ -221,7 +221,7 @@
       max-height: 18px;
       left: 8px;
       top: 8px;
-      fill: #151515; }
+      fill: #fff; }
   .callSchema__page--scheme-section {
     width: calc(98% - 340px);
     height: calc(100vh - 77px);
@@ -1157,7 +1157,9 @@
       padding: 0 10px; }
   .callSchema__page--scheme-section {
     width: 100%;
-    padding-left: 0px; } }
+    padding-left: 0px; }
+  .callSchema__page.w-offer .callSchema__page--scheme-section, .callSchema__page.w-offer .callSchema__page--sidebar {
+    height: calc(100vh - 77px); } }
 
 @media (max-width: 960px) {
   .callSchema__page--offer .content .txt {
@@ -1167,7 +1169,11 @@
   .callSchema__page--scheme-section {
     height: calc(100vh - 107px); }
   .scheme_popup {
-    width: 90%; } }
+    width: 90%; }
+  .callSchema__page--sidebar {
+    top: 73px; }
+  .callSchema__page.w-offer .callSchema__page--scheme-section, .callSchema__page.w-offer .callSchema__page--sidebar {
+    height: calc(100vh - 73px - 30px); } }
 
 @media (max-width: 450px) {
   .callSchema__page--sidebar {
@@ -1179,7 +1185,12 @@
       max-width: 100% !important;
       width: 100% !important; }
     .callSchema__page--sidebar .callSchema__page--configs .config-form .form_div {
-      max-width: 100%; } }
+      max-width: 100%; }
+  .callSchema__page--configs,
+  .callSchema__page--configs > .scroll-wrapper.scrollbar-inner,
+  .callSchema__page--sidebar,
+  .callSchema__page--sidebar > .scroll-wrapper.scrollbar-inner {
+    border-radius: 0; } }
 
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak, .ng-hide:not(.ng-hide-animate) {
   display: none !important; }
